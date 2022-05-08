@@ -75,13 +75,14 @@
 
 .dashboard-content .content-nav {
   position: sticky;
-  background-color: #f8f8f8;
+  background-color: var(--primary-color);
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   top: 5px;
+  z-index: 5;
 }
 .content-nav .menu-icon {
   cursor: pointer;
@@ -89,13 +90,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #fff;
 }
 
 .content-nav .search {
   width: 35%;
   display: flex;
   align-items: stretch;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 0.2rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -106,7 +108,9 @@
   font-family: "poppins";
   border: none;
   font-size: 1rem;
+  background-color: var(--secondary-color);
   outline: none;
+  color: #fff;
 }
 .search button {
   padding: 0rem 1rem 0rem;
@@ -116,6 +120,7 @@
   color: #fff;
   font-size: 1rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .content-nav .profile {
@@ -123,9 +128,9 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 0.3rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
 }
 .profile .avatar {
@@ -144,8 +149,14 @@
   display: flex;
   flex-direction: column;
 }
+.profile .text span {
+  color: #fff;
+}
 .profile .text div small {
-  color: #666;
+  color: rgb(151, 151, 151);
+}
+.profile svg {
+  color: #fff;
 }
 .profile .text {
   display: flex;

@@ -1,7 +1,14 @@
 import React from "react";
-import "./Analytics.module.css";
+import "./analytics.css";
 const Analytics = () => {
-  return <div>Analytics</div>;
+  return (
+    <section id="analytics">
+      <div className="title">
+        <h3>Analytics</h3>
+        <span>analytics is here</span>
+      </div>
+    </section>
+  );
 };
 
 export default Analytics;
