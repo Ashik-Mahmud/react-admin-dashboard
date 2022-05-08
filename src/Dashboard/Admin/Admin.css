@@ -9,14 +9,23 @@
 }
 .dashboard-container .sidebar {
   width: 300px;
-  background-color: #082032;
+  background-color: var(--primary-color);
   position: fixed;
   min-height: 100%;
   left: 0%;
   top: 0%;
   padding: 2rem 0rem;
+  border-radius: 0px 10px 10px 0px;
 }
-
+.sidebar .logo {
+  position: relative;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .dashboard-container .sidebar menu {
   position: relative;
   margin: 2rem 0rem;
@@ -24,36 +33,37 @@
 .dashboard-container .sidebar ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.2rem;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
 .sidebar li {
-  color: #edd;
+  color: var(--accent-color);
 }
 .sidebar a {
-  color: #edd;
+  color: var(--accent-color);
   text-decoration: none;
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: relative;
+  border-radius: 5px;
 }
 .sidebar a.active {
-  background: #2c394b;
+  background: var(--secondary-color);
 }
 .sidebar a.active::after {
   position: absolute;
   content: "";
   right: -13px;
   top: 8px;
-  background-color: #2c394b;
+  background-color: var(--secondary-color);
   transform: rotate(234deg);
   padding: 1.3rem;
-  content: "";
+  border-radius: 5px;
 }
 
 .dashboard-container .dashboard-content {
@@ -100,7 +110,7 @@
 }
 .search button {
   padding: 0rem 1rem 0rem;
-  background-color: #082032;
+  background-color: var(--primary-color);
   border: none;
   outline: none;
   color: #fff;

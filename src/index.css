@@ -1,3 +1,11 @@
+/* variables  */
+
+:root {
+  --primary-color: #082032;
+  --secondary-color: #072c47;
+  --accent-color: #edd;
+}
+
 *,
 *::after,
 *::before {

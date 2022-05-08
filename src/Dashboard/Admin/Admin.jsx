@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineDashboard, AiOutlinePlus } from "react-icons/ai";
-import { BiCategoryAlt } from "react-icons/bi";
+import { BiAnalyse, BiCategoryAlt } from "react-icons/bi";
 import { SiGoogleanalytics } from "react-icons/si";
 import { VscChevronDown } from "react-icons/vsc";
 import { Link, NavLink, Outlet } from "react-router-dom";
@@ -12,7 +12,9 @@ const Admin = () => {
       <div className="dashboard-container">
         <aside className="sidebar">
           <div>
-            <h1>Dashboard Sidebar</h1>
+            <div className="logo">
+              <BiAnalyse /> <span>Logo</span>
+            </div>
             <menu>
               <ul>
                 <li>
