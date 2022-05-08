@@ -1,0 +1,60 @@
+.products {
+  margin: 2rem 0rem;
+  position: relative;
+}
+.products .table-responsive {
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.products table {
+  width: 100%;
+  text-align: left;
+}
+table thead {
+  background-color: #f8f8f8;
+}
+table td,
+table th {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+table td img {
+  width: 80px;
+  border-radius: 5px;
+}
+table button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: none;
+  cursor: pointer;
+  background: #f8f8f8;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0rem;
+  align-items: center;
+  gap: 0.4rem;
+}
+.pagination button,
+.pagination select {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  outline: none;
+  background-color: #f8f8f8;
+}
+.pagination button.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
