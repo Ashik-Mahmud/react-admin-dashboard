@@ -1,0 +1,8 @@
+.dashboard {
+  display: grid;
+  place-items: center;
+  min-height: 85vh;
+}
+.dashboard h1 {
+  font-size: 3rem;
+}
